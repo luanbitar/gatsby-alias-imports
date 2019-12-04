@@ -1,0 +1,21 @@
+{
+  "name": "gatsby-alias-imports",
+  "version": "1.0.0",
+  "description": "Webpack alias resolver to gatsby",
+  "main": "index.js",
+  "repository": "git@github.com:luanbitar/gatsby-alias-imports.git",
+  "bugs": {
+    "url": "https://github.com/luanbitar/gatsby-alias-imports.git/issues"
+  },
+  "author": "Luan Bitar <7@lbitar.com>",
+  "license": "MIT",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "alias",
+    "import"
+  ],
+  "peerDependencies": {
+    "gatsby": ">2.0.0"
+  }
+}
