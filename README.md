@@ -3,7 +3,7 @@
 
 # gatsby-alias-imports
 
-Webpack feature for aliasing in your import statements
+Webpack feature for aliasing in your import statements, just import this plugin and all of your folders inside your `src` will be available with aliases.
 
 ```javascript
 import "styles/layout.css"
@@ -27,18 +27,13 @@ or
 
 ## How to use
 
-Add the plugin to your Gatsby config.
+Add the plugin to your `gatsby-config.js`.
 
 ```javascript
-{
+module.exports = {
   plugins: [
-    {
-      resolve: `gatsby-alias-imports`,
-      options: {
-        aliases: ["styles", "components"]
-      }
-    }
-  ]
+		`gatsby-alias-imports`
+	]
 }
 ```
 
@@ -46,15 +41,41 @@ Add the plugin to your Gatsby config.
 
 ### aliases
 
-Alias should be an array of folder names inside your project folder.
+Alias should be an object where the keys are alias and values are string to path on project
+
+Example:
+```javascript
+module.exports = {
+  plugins: [
+		{
+			resolve: `gatsby-alias-imports`,
+			options: {
+				aliases: {
+					"styles": "src/styles",
+					"config": "config/"
+				}
+			}
+		}
+	]
+}
+```
 
 ### rootFolder
 
 The **rootFolder** it's in case you change your `src` folder name
 
-It is an array of desired extensions to auto-find.
-
-E.g. `app`
+```javascript
+module.exports = {
+  plugins: [
+		{
+			resolve: `gatsby-alias-imports`,
+			options: {
+				rootFolder: "app"
+			}
+		}
+	]
+}
+```
 
 ## Further reading
 
