@@ -1,3 +1,6 @@
+[![Version](https://img.shields.io/npm/v/gatsby-alias-imports.svg)](https://www.npmjs.com/package/gatsby-alias-imports)
+[![Downloads Total](https://img.shields.io/npm/dt/gatsby-alias-imports.svg)](https://www.npmjs.com/package/gatsby-alias-imports)
+
 # gatsby-alias-imports
 
 Webpack feature for aliasing in your import statements
