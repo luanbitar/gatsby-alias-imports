@@ -32,8 +32,8 @@ Add the plugin to your `gatsby-config.js`.
 ```javascript
 module.exports = {
   plugins: [
-		`gatsby-alias-imports`
-	]
+    `gatsby-alias-imports`
+  ]
 }
 ```
 
@@ -47,33 +47,32 @@ Example:
 ```javascript
 module.exports = {
   plugins: [
-		{
-			resolve: `gatsby-alias-imports`,
-			options: {
-				aliases: {
-					"styles": "src/styles",
-					"config": "config/"
-				}
-			}
-		}
-	]
+    {
+      resolve: `gatsby-alias-imports`,
+      options: {
+        aliases: {
+          styles: "src/styles",
+          config: "config/"
+        }
+      }
+    }
+  ]
 }
 ```
 
 ### rootFolder
 
 The **rootFolder** it's in case you change your `src` folder name
-
 ```javascript
 module.exports = {
   plugins: [
-		{
-			resolve: `gatsby-alias-imports`,
-			options: {
-				rootFolder: "app"
-			}
-		}
-	]
+    {
+      resolve: `gatsby-alias-imports`,
+      options: {
+        rootFolder: "app"
+      }
+    }
+  ]
 }
 ```
 
