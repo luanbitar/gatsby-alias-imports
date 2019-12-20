@@ -1,6 +1,6 @@
 {
   "name": "gatsby-alias-imports",
-  "version": "0.0.87",
+  "version": "0.0.88",
   "description": "Webpack alias resolver to gatsby",
   "main": "index.js",
   "repository": "git@github.com:luanbitar/gatsby-alias-imports.git",
