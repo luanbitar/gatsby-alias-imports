@@ -51,8 +51,8 @@ module.exports = {
       resolve: `gatsby-alias-imports`,
       options: {
         aliases: {
-          styles: "src/styles",
-          config: "config/"
+          styles: `src/styles`,
+          config: `config/`
         }
       }
     }
@@ -69,7 +69,7 @@ module.exports = {
     {
       resolve: `gatsby-alias-imports`,
       options: {
-        rootFolder: "app"
+        rootFolder: `app`
       }
     }
   ]
