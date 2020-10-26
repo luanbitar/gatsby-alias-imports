@@ -52,7 +52,8 @@ module.exports = {
       options: {
         aliases: {
           styles: `src/styles`,
-          config: `config/`
+          config: `config/`,
+          "@utils": "src/utils/"
         }
       }
     }
